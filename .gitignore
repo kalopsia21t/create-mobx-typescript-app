@@ -15,3 +15,7 @@ jspm_packages
 # ignore idea files
 
 .idea
+
+# gzip files ignored
+
+.awcache
