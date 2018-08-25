@@ -18,4 +18,4 @@ jspm_packages
 
 # gzip files ignored
 
-.gzip
+.awcache

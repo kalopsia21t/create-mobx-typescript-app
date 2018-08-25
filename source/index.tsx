@@ -4,7 +4,7 @@ import * as ReactDOM from 'react-dom';
 class App extends React.Component<{}, {}> {
     render(): JSX.Element {
         return (<div>
-            REACT YEAH!!
+            <div>Typescript is awesome!!</div>
         </div>);
     }
 }
