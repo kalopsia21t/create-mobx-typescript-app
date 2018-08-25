@@ -1,8 +1,6 @@
 const path = require('path');
-const webpack = require('webpack');
 const { BABEL_LOADER, AWESOME_TS_LOADER } = require('./webpack/loaders'); 
-const { CheckerPlugin } = require('awesome-typescript-loader');
-const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
+const { PLUGINS } = require('./webpack/plugins');
 
 module.exports = {
     mode: 'development',
@@ -34,9 +32,5 @@ module.exports = {
         extensions: ['*', '.ts', '.tsx', ".js", ".jsx"]
     },
 
-    plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new CheckerPlugin(),
-        new HardSourceWebpackPlugin()
-    ]
+    plugins: PLUGINS
 };
