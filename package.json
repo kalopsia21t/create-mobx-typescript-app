@@ -4,6 +4,7 @@
   "description": "boilerplate",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --color",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,23 @@
   "bugs": {
     "url": "https://github.com/kalopsia21t/create-mobx-typescript-app/issues"
   },
-  "homepage": "https://github.com/kalopsia21t/create-mobx-typescript-app#readme"
+  "homepage": "https://github.com/kalopsia21t/create-mobx-typescript-app#readme",
+  "dependencies": {
+    "awesome-typescript-loader": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "hard-source-webpack-plugin": "^0.12.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.21.0",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "devDependencies": {
+    "@types/react": "^16.4.11",
+    "@types/react-dom": "^16.0.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
 }
