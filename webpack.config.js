@@ -1,5 +1,5 @@
 const path = require('path');
-const { BABEL_LOADER, AWESOME_TS_LOADER } = require('./webpack/loaders'); 
+const { CSS_LOADER, LESS_LOADER, AWESOME_TS_LOADER } = require('./webpack/loaders'); 
 const { PLUGINS } = require('./webpack/plugins');
 
 module.exports = {
@@ -23,8 +23,8 @@ module.exports = {
                 exclude: /node_modules/,
                 use:[ AWESOME_TS_LOADER ]
             },
-            
-            { test: /\.less/, use: [{ loader: 'style-loader' }, { loader: 'css-loader'}, { loader: 'less-loader' }] }
+            { test: /\.(css)$/, use: [{ loader: 'style-loader' }, CSS_LOADER] },            
+            { test: /\.(less)$/, use: [{ loader: 'style-loader' }, CSS_LOADER, LESS_LOADER] }
         ]
     },
     
