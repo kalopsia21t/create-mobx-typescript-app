@@ -1,3 +1,8 @@
-### Boilerplate for Mob-x and Typescript
+# Boilerplate for React and Typescript
 
-README in progress
+Included webpack building, css-modules integration, less pre-proccessing, and many features.
+
+### Run example
+
+     $ npm install
+     $ npm start & open http://localhost:8080
