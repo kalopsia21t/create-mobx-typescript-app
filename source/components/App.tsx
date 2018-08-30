@@ -6,7 +6,7 @@ class AppContainer extends React.Component<{}, {}> {
     public render(): JSX.Element {
         return (<div className={styles.app}>
             <header className={styles.appHeader}>
-                <h1>Typescript & MobX</h1>
+                <h1>React & Typescript</h1>
             </header>
             <article>
                 <div>
@@ -28,7 +28,7 @@ class AppContainer extends React.Component<{}, {}> {
             <article>
                 <div>
                     <p>
-                       In future I will add Jest as test-runner, and Babel for improve building and react-hot-realoding.
+                       In future I will add Jest as test-runner, and Babel for improve building and react-hot-realoding and TS transpilation.
                     </p>
                 </div>
             </article>
