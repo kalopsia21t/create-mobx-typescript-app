@@ -4,11 +4,11 @@ import * as ReactDOM from 'react-dom';
 import AppContainer from './components/App';
 
 class App extends React.Component<{}, {}> {
-    render(): JSX.Element {
+    public render(): JSX.Element {
         return (<div>
             <AppContainer />
-        </div>)
-        }
+        </div>);
+    }
 }
 
 ReactDOM.render(<App />, document.querySelector('#root'));

@@ -1,5 +1,5 @@
 const path = require('path');
-const { CSS_LOADER, LESS_LOADER, AWESOME_TS_LOADER } = require('./webpack/loaders'); 
+const { CSS_LOADER, LESS_LOADER, AWESOME_TS_LOADER, TSLINT_LOADER } = require('./webpack/loaders'); 
 const { PLUGINS } = require('./webpack/plugins');
 
 module.exports = {
@@ -21,7 +21,7 @@ module.exports = {
             { 
                 test: /\.(tsx)$/,
                 exclude: /node_modules/,
-                use:[ AWESOME_TS_LOADER ]
+                use:[ AWESOME_TS_LOADER, TSLINT_LOADER ]
             },
             { test: /\.(css)$/, use: [{ loader: 'style-loader' }, CSS_LOADER] },            
             { test: /\.(less)$/, use: [{ loader: 'style-loader' }, CSS_LOADER, LESS_LOADER] }
