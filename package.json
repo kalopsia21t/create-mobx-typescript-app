@@ -1,7 +1,7 @@
 {
-  "name": "create-mobx-typescript-app",
+  "name": "react-typescript-boilerplate",
   "version": "1.0.0",
-  "description": "boilerplate",
+  "description": "Boilerplate for React and Typescript",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --color",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kalopsia21t/create-mobx-typescript-app.git"
+    "url": "git+https://github.com/kalopsia21t/react-typescript-boilerplate.git"
   },
   "author": "kalopsia21t",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kalopsia21t/create-mobx-typescript-app/issues"
+    "url": "https://github.com/kalopsia21t/react-typescript-boilerplate/issues"
   },
-  "homepage": "https://github.com/kalopsia21t/create-mobx-typescript-app#readme",
+  "homepage": "https://github.com/kalopsia21t/react-typescript-boilerplate#readme",
   "dependencies": {
     "awesome-typescript-loader": "^5.2.0",
     "css-loader": "^1.0.0",
@@ -24,6 +24,8 @@
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "style-loader": "^0.21.0",
+    "tslint": "^5.11.0",
+    "tslint-loader": "^3.6.0",
     "typescript": "^3.0.1",
     "webpack": "^4.16.4",
     "webpack-cli": "^3.1.0",

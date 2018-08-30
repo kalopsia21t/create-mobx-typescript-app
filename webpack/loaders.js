@@ -18,8 +18,16 @@ const AWESOME_TS_LOADER = {
     }
 }
 
+const TSLINT_LOADER = {
+    loader: 'tslint-loader',
+    options: {
+        emitErrors: true
+    }
+};
+
 module.exports = {
     CSS_LOADER,
     LESS_LOADER,
-    AWESOME_TS_LOADER
+    AWESOME_TS_LOADER,
+    TSLINT_LOADER
 }
