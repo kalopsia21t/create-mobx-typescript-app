@@ -19,6 +19,11 @@
   "homepage": "https://github.com/kalopsia21t/react-typescript-boilerplate#readme",
   "dependencies": {
     "awesome-typescript-loader": "^5.2.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
     "hard-source-webpack-plugin": "^0.12.0",
     "less": "^3.8.1",
