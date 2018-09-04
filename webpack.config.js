@@ -19,17 +19,16 @@ module.exports = {
     module: {
         rules: [
             { 
-                test: /\.(tsx)$/,
+                test: /\.(tsx|ts)$/,
                 exclude: /node_modules/,
                 use:[ Loaders.BABEL_LOADER, Loaders.AWESOME_TS_LOADER, Loaders.TSLINT_LOADER ]
-            },
-            { test: /\.(css)$/, use: [{ loader: 'style-loader' }, Loaders.CSS_LOADER] },            
-            { test: /\.(less)$/, use: [{ loader: 'style-loader' }, Loaders.CSS_LOADER, Loaders.LESS_LOADER] }
+            },            
+            { test: /\.(css|less)$/, use: [{ loader: 'style-loader' }, Loaders.CSS_LOADER, Loaders.LESS_LOADER] }
         ]
     },
     
     resolve: {
-        extensions: ['*', '.ts', '.tsx', ".js", ".jsx"]
+        extensions: ['.ts', '.tsx', '.js', '.jsx', '.less', '.css']
     },
 
     plugins: PLUGINS
