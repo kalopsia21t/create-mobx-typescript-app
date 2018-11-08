@@ -23,8 +23,8 @@ module.exports = {
                 exclude: /node_modules/,
                 use:[ Loaders.BABEL_LOADER, Loaders.AWESOME_TS_LOADER, Loaders.TSLINT_LOADER ]
             },
-            { test: /\.(css)$/, use: [{ loader: 'style-loader' }, Loaders.CSS_LOADER] },            
-            { test: /\.(less)$/, use: [{ loader: 'style-loader' }, Loaders.CSS_LOADER, Loaders.LESS_LOADER] }
+            { test: /\.(css)$/, use: [{ loader: 'style-loader' }, Loaders.CSS_LOADER_WITH_TYPES] },            
+            { test: /\.(less)$/, use: [{ loader: 'style-loader' }, Loaders.CSS_LOADER_WITH_TYPES, Loaders.LESS_LOADER] }
         ]
     },
     

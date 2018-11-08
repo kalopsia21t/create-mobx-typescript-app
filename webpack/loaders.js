@@ -8,6 +8,14 @@ const CSS_LOADER = {
     }
 };
 
+const CSS_LOADER_WITH_TYPES = {
+    loader: 'typings-for-css-modules-loader',
+    options: {
+        modules: true,
+        namedExport: true
+    }
+}
+
 const LESS_LOADER = {
     loader: 'less-loader'
 };
@@ -38,6 +46,7 @@ const TSLINT_LOADER = {
 
 module.exports = {
     CSS_LOADER,
+    CSS_LOADER_WITH_TYPES,
     LESS_LOADER,
     BABEL_LOADER,
     AWESOME_TS_LOADER,
