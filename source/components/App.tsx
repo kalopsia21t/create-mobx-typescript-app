@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import styles from './App.less';
+import * as styles from './App.less';
 
 class AppContainer extends React.Component<{}, {}> {
     public render(): JSX.Element {
-        return (<div className={styles.app}>
+        return (<div>
             <header className={styles.appHeader}>
                 <h1>React & Typescript</h1>
             </header>
